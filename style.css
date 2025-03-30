@@ -230,6 +230,7 @@
       #hero-section{
           display: flex;
           flex-direction: column;
+          padding-top: 80px;
       }
   
       .hero-sub-container-one{
