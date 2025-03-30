@@ -226,11 +226,17 @@
   
   
   /* Landing Section responsivness */
+  @media (max-width: 900px){
+    #hero-section{
+        padding-top: 80px;
+    }
+}
+
   @media (max-width: 700px){
       #hero-section{
           display: flex;
           flex-direction: column;
-          padding-top: 80px;
+          padding-top: 139px;
       }
   
       .hero-sub-container-one{
