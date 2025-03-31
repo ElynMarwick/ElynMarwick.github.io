@@ -236,7 +236,7 @@
       #hero-section{
           display: flex;
           flex-direction: column;
-          padding-top: 139px;
+          padding-top: 100px;
       }
   
       .hero-sub-container-one{
