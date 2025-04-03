@@ -272,8 +272,19 @@
       flex-direction: row;
       justify-content: space-between;
   }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: 1s all ease;
+  }
+
+  .reveal.active{
+    opacity: 1;
+    transform: translateY(0)
+  }
   
-  #about-us p{
+  #about-me p{
       color: white;
   }
   
@@ -311,3 +322,15 @@
       margin-bottom: 10px;
   }
   
+@media (max-width: 700px){
+    #about-me{
+        padding-top: 30px;
+    }
+
+    .about-row{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 25px;
+    }
+}

@@ -31,42 +31,52 @@
                         </ul>
                     </div>
                 </div>
-            <nav>
-            </header>
+            </nav>
+        </header>
+
             <!-- About me info -->
-            <section id = "about-me">
-                <div class = "about-me-container">
-                    <div class = "about-row reveal">
-                        <div class = "athlete-col">
-                            <h2>Athlete</h2>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text
-                                ever since the 1500s, when an unknown printer took a galley of
-                                type and scrambled it to make a type specimen book.   
-                            </p>
-                        </div>
-                        <div class="coach-col">
-                            <h2>Coach</h2>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text
-                                ever since the 1500s, when an unknown printer took a galley of
-                                type and scrambled it to make a type specimen book.
-                            </p>
-                        </div>
-                        <div class = "student-col">
-                            <h2>Student</h2>
-                            <p>
-                               Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text
-                                ever since the 1500s, when an unknown printer took a galley of
-                                type and scrambled it to make a type specimen book.
-                            </p>
-                        </div>
+        <section id = "about-me">
+            <div class = "about-me-container">
+                <div class = "about-row">
+                    <div id = 0 class="coach-col reveal">
+                        <h2>Coach</h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text
+                            ever since the 1500s, when an unknown printer took a galley of
+                            type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
+                    <div class = "student-col reveal">
+                        <h2>Student</h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text
+                            ever since the 1500s, when an unknown printer took a galley of
+                            type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
+                    <div class = "athlete-col reveal">
+                        <h2>Athlete</h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text
+                            ever since the 1500s, when an unknown printer took a galley of
+                            type and scrambled it to make a type specimen book.   
+                        </p>
                     </div>
                 </div>
-             </section>
-        <script type="text/javascript"></script>
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            window.addEventListener("load", () => {
+                const reveals= document.querySelectorAll (".reveal");
+                reveals.forEach((reveal, index) => {
+                    reveal.style.transitionDelay = `${index * 0.3}s`;
+                    reveal.classList.add("active");
+                });        
+            });
+        </script>
     </body>
 </html>
