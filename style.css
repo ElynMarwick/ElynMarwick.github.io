@@ -227,16 +227,16 @@
   
   /* Landing Section responsivness */
   @media (max-width: 900px){
-    #hero-section{
-        padding-top: 80px;
-    }
-}
-
+      #hero-section{
+          padding-top: 80px;
+      }
+  }
+  
   @media (max-width: 700px){
       #hero-section{
           display: flex;
           flex-direction: column;
-          padding-top: 100px;
+          padding-top: 139px;
       }
   
       .hero-sub-container-one{
@@ -246,3 +246,68 @@
           width: 100%;
       }
   }
+  
+  /*About Section styles*/
+  
+  #about-me {
+      min-height: 100vh;
+      max-width: 100vw;
+      background-color: black;
+      min-height: 100vh;
+  }
+  
+  .about-me-container{
+      text-align: left;
+      width: 80%;
+      margin: auto;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .about-row{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  
+  #about-us p{
+      color: white;
+  }
+  
+  .athlete-col{
+      color: white;
+      padding: 10px;
+      flex-basis: 31%;
+  }
+  
+  .athlete-col h2{
+      color: white;
+      margin-bottom: 10px;
+  }
+  
+  
+  .coach-col{
+      color: white;
+      padding: 10px;
+      flex-basis: 31%;
+  }
+  
+  .coach-col h2{
+      color: white;
+      margin-bottom: 10px;
+  }
+  
+  .student-col{
+      color: white;
+      padding: 10px;
+      flex-basis: 31%;
+  }
+  
+  .student-col h2{
+      color: white;
+      margin-bottom: 10px;
+  }
+  
