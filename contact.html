@@ -32,6 +32,50 @@
                 </div>
             <nav>
             </header>
-        <script type="text/javascript"></script>
+
+            <!-- Contact me info -->
+            <section id = "contact">
+                <div class = 'contact-row reveal'>
+                    <div class = "contact-col">
+                        <div class = "contact-message-wrapper">
+                            <h2>Contact Me</h2>
+                            <p>
+                                If you have any questions or would like to work with me, please reach out!
+                            </p> 
+                            </div>
+                        </div>
+                    <div class = "contact-col">
+                        <div class = "social-icon-wrapper">
+                            <a 
+                                href="mailto:elynm@hotmail.co.uk"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            ><i class="fab fa-envelope"></i>
+                            </a>
+                            <a 
+                                href="https://www.instagram.com/elynmarwick/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            ><i class="fab fa-instagram"></i>
+                            </a>
+                            <a 
+                                href="https://www.linkedin.com/in/elyn-marwick/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            ><i class="fab fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <script type="text/javascript">
+                window.addEventListener("load", () => {
+                    const reveals= document.querySelectorAll (".reveal");
+                    reveals.forEach((reveal, index) => {
+                        reveal.style.transitionDelay = `${index * 0.4}s`;
+                        reveal.classList.add("active");
+                    });        
+                });
+            </script>
     </body>
 </html>
