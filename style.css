@@ -10,6 +10,10 @@
     /*background-color: black; /*remover aferlanding???*/  
   }
   
+  body{
+    background-color: black;
+  }
+
   /*Hero link edits*/
   .hero-link{
       font-size: larger;
@@ -377,6 +381,7 @@
 }
 
 .social-icon-wrapper a{
+    color: white;
     margin: 0 10px;
     font-size: 24px;
     transition: 0.5s;
@@ -419,7 +424,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 80px;
     background-color: black;
 }
 
@@ -429,7 +434,7 @@
     font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     height: 100%;
 }
 
@@ -494,4 +499,29 @@
     height: .4rem;
     background-color: white;
     transform: rotate(45deg);
+}
+
+/*blogPostPage*/
+
+/*Work with me*/
+.under-construction{
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.under-construction h1{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+}
+.under-construction-container{
+    padding-top: 30px;
+    color: white;
 }
