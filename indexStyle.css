@@ -1,0 +1,209 @@
+/* General Styles */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    max-width: 100vw;
+    box-sizing: border-box;
+    /*background-color: black; /*remover aferlanding???*/  
+  }
+  
+  body{
+    background-color: black;
+  }
+
+  /*Hero link edits*/
+  .sticky-bg {
+    width: 100%;
+    backdrop-filter: blur(20px);
+   }
+
+
+  .navbar-brand{
+      font-size: larger;
+      font-family: 'Courier New', monospace;
+      color: white;
+      transition: 0.5s;
+      margin-left: 10px;
+  }
+
+  .navbar-brand:hover{
+      color: lightskyblue;
+      font-weight: 500;
+  }
+  
+  .navbar-toggler{
+    color: white;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); 
+  }
+
+  .nav-link{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    font-family: 'Courier New', monospace;
+    font-size: larger;
+  }
+
+  .nav-link:hover{
+    color: lightskyblue;
+    font-weight: 500;
+  }
+
+  .navbar-nav {
+    display: flex;
+    gap: 30px;
+    padding: 1% 3%;
+    list-style: none;
+    padding-right: 20px;
+}
+
+
+  
+  /* Custom Scroll - I dont't think I want weird colours here?? Maybe add a plain one for compatability */
+  /* width */
+  ::-webkit-scrollbar{
+      width: 10px;
+      background-color: rgba(0,0,0,0);
+  }
+  /* Track for scroll bar */
+  ::-webkit-scrollbar-track{
+      background-color: black;
+  }
+  
+  /*Handle*/
+  ::-webkit-scrollbar-thumb{
+      background: rgb(240,240,240);
+      border-radius: 10px;
+      width: 5px;
+      height: 5px;
+  }
+  
+  /* Handle on hover*/
+  ::-webkit-scrollbar-thumb:hover{
+      background: #686868;
+  }
+  
+
+  
+  /* Adding responsivness to Nav Section */
+  @media (max-width: 700px){
+      nav .fa{
+          display: block;
+          color: #ffffff;
+          margin: 10px;
+          font-size: 36px;
+          cursor: pointer;
+      }
+      .sticky-bg{
+          backdrop-filter: none;
+      }
+      .nav-links .hero-link{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 10%;
+          font-size: 22px;
+      }
+  
+      .nav-links ul li {
+          display: block;
+          text-align: left;
+          padding: 5px 50px;
+      }
+      #nav-links-sub{
+          left: -200px;
+          text-align: right;
+          margin-top: 70px;
+          position: absolute;
+          height: 100vh;
+          width:30%;
+          background: lightskyblue;
+          backdrop-filter: blur(3px);
+          transition: 1s;
+      }
+  }
+  
+  /* Landing Section Design */
+  
+  #hero-section {
+      min-height: 100vh;
+      max-width: 100vw;
+      background-color: black;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      overflow: hidden;
+      background-color: black;
+  }
+  
+  .hero-sub-container-one{
+      width: 40%;
+      justify-content: flex-start;
+      text-align: center;
+      padding: 20px;
+      color: white;
+      font-family: 'Times New Roman', serif;
+  }
+  
+  .hero-sub-container-one h1{
+      margin: 0;
+      margin-bottom: 30px;
+      font-family: 'Courier New', Courier, monospace;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 70px;
+      transition: 0.7s;
+  }
+  
+  .hero-sub-container-one p{
+      margin-bottom: 16px;
+      line-height: 1.6;
+      font-weight: 300;
+      font-size: medium;
+  }
+  
+  
+  .hero-sub-container-two{
+      width: 60%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px;
+  }
+  
+  .hero-sub-container-two img{
+      max-width: 100%;
+      height: auto;
+      display: block;
+      transition: 0.7s;
+  }
+  
+  
+  /* Landing Section responsivness */
+  @media (max-width: 900px){
+      #hero-section{
+          padding-top: 80px;
+      }
+  }
+  
+  @media (max-width: 700px){
+      #hero-section{
+          display: flex;
+          flex-direction: column;
+          padding-top: 10px;
+      }
+  
+      .hero-sub-container-one{
+          width: 100%;
+      }
+      .hero-sub-container-two{
+          width: 100%;
+      }
+  }
