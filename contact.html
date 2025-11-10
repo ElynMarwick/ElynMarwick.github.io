@@ -10,9 +10,10 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         /> 
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
         <link
         rel="stylesheet"
-        href="style.css"
+        href="contactStyle.css"
         />     
     </head>
     <body>
@@ -49,48 +50,53 @@
 
 
             <!-- Contact me info -->
-            <section id = "contact">
-                <div class = 'contact-row reveal'>
-                    <div class = "contact-col">
-                        <div class = "contact-message-wrapper">
-                            <h2>Contact Me</h2>
-                            <p>
-                                If you have any questions or would like to work with me, please reach out!
-                            </p> 
-                            </div>
-                        </div>
-                    <div class = "contact-col">
-                        <div class = "social-icon-wrapper">
-                            <a 
-                                href="mailto:elynm@hotmail.co.uk"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            ><i class="fab fa-envelope"></i>
-                            </a>
-                            <a 
-                                href="https://www.instagram.com/elynmarwick/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            ><i class="fab fa-instagram"></i>
-                            </a>
-                            <a 
-                                href="https://www.linkedin.com/in/elyn-marwick/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            ><i class="fab fa-linkedin"></i>
-                        </div>
+            <section id = "contact" class = "container-fluid">
+                <div class = 'row align-items-center'>
+                    <div class = "col-md-7 contact-words text-center">
+                        <h2>Contact Me</h2>
+                        <p>
+                            If you have any questions or would like to work with me, please reach out!
+                        </p> 
+                    </div>
+                    <div class = "col-md-5 social-icon-wrapper">
+                        <a 
+                            href="mailto:elynm@hotmail.co.uk"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ><i class="fab fa-envelope"></i>
+                        </a>
+                        <a 
+                            href="https://www.instagram.com/elynmarwick/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ><i class="fab fa-instagram"></i>
+                        </a>
+                        <a 
+                            href="https://www.linkedin.com/in/elyn-marwick/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ><i class="fab fa-linkedin"></i>
+                        </a>
                     </div>
                 </div>
             </section>
-
-            <script type="text/javascript">
-                window.addEventListener("load", () => {
-                    const reveals= document.querySelectorAll (".reveal");
-                    reveals.forEach((reveal, index) => {
-                        reveal.style.transitionDelay = `${index * 0.4}s`;
-                        reveal.classList.add("active");
-                    });        
-                });
-            </script>
+            <footer class = "footer container-fluid">
+                <!--Webpage Title and Copyright-->
+                <div class="row">
+                    <div class = "copyright-footer col-md-6 text-center text-md-start">
+                        <p>@2025 Elyn Marwick All Rights Reserved</p>
+                    </div>
+                    <!--Further Information and contact-->
+                    <div class = "list-footer col-md-6 pe-md-5">
+                        <ul>
+                            <li class="footer-list"><a class ="nav-link" href="index.html">Home</a></li>
+                            <li class="footer-list"><a class ="nav-link" href="about.html">About</a></li>
+                            <li class="footer-list"><a class ="nav-link" href="blog.html">Blog</a></li>
+                            <li class="footer-list"><a class ="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            <script src="reveal.js"></script>
     </body>
 </html>

@@ -563,3 +563,28 @@
     padding-top: 30px;
     color: white;
 }
+
+/*Footer Styling*/
+.footer{
+    margin: auto;
+    padding-top: 2%;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    height: 10vh;
+}
+
+.copyright-footer p{
+    text-decoration: none;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Courier New', monospace;
+    font-size: larger;
+}
+
+.list-footer ul{
+    display: flex;
+    justify-content: space-between;
+}
