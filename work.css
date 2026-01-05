@@ -60,7 +60,7 @@
     padding: 1% 3%;
     list-style: none;
     padding-right: 20px;
-}
+  }
 
 
   
@@ -89,35 +89,92 @@
   }
   
   
-  /* Landing Section Design */
+  /* Work Design */
   
-  #hero-section {
-      background-color: lightblue;
+    #work-with-me {
+        min-height: 100vh;
+        max-width: 100vw;
+        background-color: black;
+        min-height: 100vh;
+    }
+    
+    .work-with-me-container{
+        text-align: left;
+        width: 80%;
+        margin: auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .work-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  
+    .reveal {
+      opacity: 0;
+      transform: translateY(150px);
+      transition: 1s all ease;
+    }
+  
+    .reveal.active{
+      opacity: 1;
+      transform: translateY(0)
+    }
+    
+    #work-with-me p{
+        margin-bottom: 16px;
+        color: white;
+    }
+    
+    .full-col{
+        color: white;
+        padding: 10px;
+        flex-basis: 48%;
+    }
+    
+    .full-col h2{
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .full-col h3{
+        font-size: larger;
+        font-family: 'Courier New', monospace;
+    }
+    
+    
+    .skill-col{
+        color: white;
+        padding: 10px;
+        flex-basis: 48%;
+    }
+    
+    .skill-col h2{
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .skill-col h3{
+        font-size: larger;
+        font-family: 'Courier New', monospace;
+    }
+    
+  @media (max-width: 700px){
+      .work-row{
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          gap: 35px;
+      }
   }
-
-
-  #hero-section h1 {
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-  }
-
-#hero-section p {
-    font-family: "Orbitron", sans-serif;
-    font-size: x-large;
-}
-
-.reveal {
-  opacity: 0;
-  transform: translateY(80px);
-  transition: 0.8s all ease;
-}
-
-.reveal.active{
-  opacity: 1;
-  transform: translateY(0)
-}
+  
+  
+ 
 
 /*Footer Styling*/
 .footer{
