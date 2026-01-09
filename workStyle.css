@@ -178,6 +178,10 @@
     }
     
   @media (max-width: 700px){
+      .work-with-me-container{
+        padding-top: 1rem;
+      }
+      
       .work-row{
           flex-direction: column;
           justify-content: space-between;
