@@ -145,6 +145,7 @@
     .full-col h3{
         font-size: larger;
         font-family: 'Courier New', monospace;
+        color: lightskyblue;
     }
     
     
@@ -162,6 +163,18 @@
     .skill-col h3{
         font-size: larger;
         font-family: 'Courier New', monospace;
+        color: lightskyblue;
+    }
+
+    .nav-link-work:hover{
+      color: lightskyblue;
+      font-weight: 500;
+    }
+
+    .nav-link-work{
+      text-decoration: none;
+      color: white;
+      transition: 0.5s;
     }
     
   @media (max-width: 700px){

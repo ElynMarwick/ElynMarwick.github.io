@@ -45,7 +45,7 @@
   .nav-link{
     text-decoration: none;
     color: white;
-    transition: 0.5s;
+    transition: 0.1s;
     font-family: 'Courier New', monospace;
     font-size: larger;
   }
