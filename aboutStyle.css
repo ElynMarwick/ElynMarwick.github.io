@@ -152,7 +152,7 @@
   }
   
   .athlete-col h2{
-      color: white;
+      color: lightskyblue;
       margin-bottom: 10px;
       font-size: 2rem;
       font-family: 'Courier New', monospace;
@@ -166,7 +166,7 @@
   }
   
   .coach-col h2{
-      color: white;
+      color: lightskyblue;
       margin-bottom: 10px;
       font-size: 2rem;
       font-family: 'Courier New', monospace;
@@ -179,7 +179,7 @@
   }
   
   .student-col h2{
-      color: white;
+      color: lightskyblue;
       margin-bottom: 10px;
       font-size: 2rem;
       font-family: 'Courier New', monospace;
