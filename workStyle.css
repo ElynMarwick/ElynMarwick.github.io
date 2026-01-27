@@ -225,3 +225,18 @@
     }
 }
   
+
+@media (max-width: 992px){
+  #contact {
+      padding-top: 50%;
+  }
+
+  .copyright-footer p{
+      font-size: small;
+      padding: 10px;
+  }
+  
+  .list-footer {
+      padding: 5px;
+  }
+}
