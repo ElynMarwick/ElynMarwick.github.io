@@ -157,7 +157,7 @@
     align-items: center;
     text-decoration: none;
     color: white;
-    height: 10vh;
+    min-height: 10vh;
 }
 
 .copyright-footer p{
@@ -167,7 +167,10 @@
     align-items: center;
     font-family: 'Courier New', monospace;
     font-size: larger;
+    margin: 0;
 }
+
+
 
 .list-footer ul{
     display: flex;
@@ -177,6 +180,15 @@
 @media (max-width: 992px){
     #contact {
         padding-top: 50%;
+    }
+
+    .copyright-footer p{
+        font-size: small;
+        padding: 10px;
+    }
+    
+    .list-footer {
+        padding: 5px;
     }
 }
   
