@@ -97,7 +97,6 @@
     background-color: lightblue;
     min-height: 100vh;
     color: black;
-    padding-top: 25%;
 }
 
 .contact-words h2 {
@@ -113,22 +112,32 @@
 
 .social-icon-wrapper{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    gap: 15px;
     justify-content: space-around;
 }
 
 .social-icon-wrapper a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
     color: black;
     font-size: 40px;
     transition: 0.5s;
+    text-decoration: none;
+    font-family: "Orbitron", sans-serif;
+    font-size: large;
 }
 
 .social-icon-wrapper a:hover{
     color: darkblue
 }
 
-/* adding reveal and rotation animation */
+
+
+/* adding reveal animation */
 .reveal{
     position: relative;
     transform: translateY(150px);
